@@ -1,0 +1,17 @@
+# Constants for weightage of each component
+ASSIGNMENT_WEIGHT = 0.3
+QUIZ_WEIGHT = 0.2
+EXAM_WEIGHT = 0.5
+
+# Get user input for scores
+assignment_score = float(input("Enter your assignment score (out of 100): "))
+quiz_score = float(input("Enter your quiz score (out of 100): "))
+exam_score = float(input("Enter your exam score (out of 100): "))
+
+# Calculate overall grade
+overall_grade = (assignment_score * ASSIGNMENT_WEIGHT) + \
+                (quiz_score * QUIZ_WEIGHT) + \
+                (exam_score * EXAM_WEIGHT)
+
+# Display the overall grade
+print("\nYour overall grade is:", overall_grade)
